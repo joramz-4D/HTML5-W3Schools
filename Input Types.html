@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types</title>
+</head>
+<body>
+    <h1>HTML - Input Types</h1>
+    <!--This chapter describes the different types for the HTML <input> element.
+    HTML Input Types
+Here are the different input types you can use in HTML:
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">-->
+
+<p>Tip: The default value of the type attribute is "text".</p>
+    <h2>HTML Input Types</h2>
+
+    <!--<input type="text"> defines a single-line text input field:-->
+
+    <h2>Reset Button</h2>
+    <p>The <strong>input type="reset"</strong>defines a reset button that resets all values form values to their defaults:</p>
+
+    <form action="/action_page.php">
+
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Onyait"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Joramz"><br><br>
+
+        <input type="submit" value="Submit"> <!--Button for submit-->
+        <input type="reset" value="Reset"> <!--Button for reset-->
+    </form>
+
+    <h1>Input Type Password</h1>
+    <h2>Password field</h2>
+
+<p>The <strong>input type="password"</strong> defines a password field:</p>
+
+<form action="/action_page.php">
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>The characters in a password field are masked (shown as asterisks or circles).</p>
+
+<h1>Input Type Submit</h1>
+<!--<input type="submit"> defines a button for submitting form data to a form-handler.
+The form-handler is typically a server page with a script for processing input data.
+
+The form-handler is specified in the form's action attribute:-->
+
+<p>If you omit the submit button's value attribute, the button will get a default text:</p>
+        <form action="/action_page.php">
+
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+            <input type="submit">
+        </form> 
+
+        <!--Input Type Button
+<input type="button"> defines a button:
+
+Example
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">-->
+
+<h1>Input Type Color</h1>
+
+<!--The <input type="color"> is used for input fields that should contain a color.
+Depending on browser support, a color picker can show up in the input field.
+Example-->
+
+        <h2>Show a Color picker</h2>
+
+        <p>The <strong>input type="color"</strong>is used to input fields that should have the colors.</p>
+
+        <form action="/action_page.php">
+
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+
+            <input type="submit" value="Submit">
+        </form>
+
+    <p><b>Note:</b> type="color" is not supported in Internet Explorer 11.</p>
+
+        <h1>Input Type Date</h1>
+
+        <!--The <input type="date"> is used for input fields that should contain a date. Depending on browser support, a date picker can show up in the input field.
+    Example-->
+
+    <h3>Date Field</h3>
+
+        <p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+
+        <form action="/action_page.php">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <input type="submit" value="Submit">
+        </form>
+
+        <p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11.</p>
+
+        <h1>Suggested change from Copilot Github:</h1>
+
+        <h2>Input Type Datetime-local</h2>
+
+       <!--The <input type="datetime-local"> is used for input fields that should contain a date and time, with no time zone. Depending on browser support, a date and time picker can show up in the input field.
+                Example--> 
+         <h3>Datetime-local Field</h3>
+ 
+         <p>The <strong>input type="datetime-local"</strong> is used for input fields that should contain a date and time (no time zone).</p>
+ 
+         <form action="/action_page.php">
+             <label for="meeting">Meeting date and time:</label>
+             <input type="datetime-local" id="meeting" name="meeting">
+             <input type="submit" value="Submit">
+         </form>
+ 
+         <p><strong>Note:</strong> type="datetime-local" is not supported in Internet Explorer 11 or Safari 12 (or earlier).</p>
+
+
+
+</body>
+</html>
